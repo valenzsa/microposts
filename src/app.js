@@ -1,10 +1,13 @@
-const greeting = 'Hello World';
+// CommonJS Module Synxtax
+//const person = require("./myModule1");
+
+// ES2015 Module Syntax
+// import { person, sayHello } from "./myModule2";
+// import * as mod from "./myModule2";
+import greeting from "./myModule2";
+
+// console.log(mod.person.name);
+
+// console.log(mod.sayHello());
+
 console.log(greeting);
-
-const getData = async (url) => {
-  const response = await fetch(url);
-  const result = await response.json();
-  console.log(result);
-};
-
-getData('https://jsonplaceholder.typicode.com/posts');
